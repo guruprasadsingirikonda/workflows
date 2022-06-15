@@ -1,0 +1,13 @@
+name: Push-to-EC2
+
+on: push
+
+jobs:
+  deploy:
+    name: Push to EC2 Instance
+    runs-on: ubuntu-latest
+
+    steps:
+      run: |
+         ssh testguru@18.206.160.191 -p Guru@1234
+           pwd
