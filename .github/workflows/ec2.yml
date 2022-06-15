@@ -9,6 +9,7 @@ jobs:
     steps:
       - name: Create SSH key
         run: |
+          apt-get sshpass
           sshpass -p 'Guru@1234'ssh testguru@18.206.160.191 
           mkdir -p guru
          
