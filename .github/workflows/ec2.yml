@@ -6,8 +6,12 @@ jobs:
   deploy:
     name: Push to EC2 Instance
     runs-on: ubuntu-latest
-
     steps:
-      run: |
-         ssh testguru@18.206.160.191 -p Guru@1234
-           pwd
+      - name: Create SSH key
+        run: |
+          ssh testguru@18.206.160.191 -p Guru@1234
+          mkdir -p guru
+         
+        shell: bash
+
+   
