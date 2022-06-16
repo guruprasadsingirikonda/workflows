@@ -7,9 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: executing remote ssh commands using password
-      uses: appleboy/ssh-action@master
-      with:
-        host: 18.206.160.191
+      run: |
+        host: ${{ host}}
         username: testguru
         password: Guru@1234
         port: 22
