@@ -8,7 +8,7 @@ jobs:
     steps:
     - name: executing remote ssh commands using password
       run: |
-        host: ${{ host}}
+        host: ${{ HOST }}
         username: testguru
         password: Guru@1234
         port: 22
